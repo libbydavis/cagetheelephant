@@ -10,6 +10,6 @@ $(document).ready(function(){
 	$("#socialcuescontent").click(function(){
 		$("#bigalbumimage").fadeToggle();
 		$(".hiddenalbum").fadeToggle();
-		$(".albumtitle").hide();
+		$(".albumtitle").toggle();
 	});
 });
