@@ -8,8 +8,13 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
 	$("#socialcuescontent").click(function(){
-		$("#bigalbumimage").fadeToggle();
-		$(".hiddenalbum").fadeToggle();
+		$("#bigalbumimage").hide();
+		$(".hiddenalbum").fadeIn();
+		$(".albumtitle").toggle();
+	});
+	$("#closealbum").click(function(){
+		$("#bigalbumimage").fadeIn();
+		$(".hiddenalbum").hide();
 		$(".albumtitle").toggle();
 	});
 });
