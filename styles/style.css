@@ -6,6 +6,7 @@ body, html{
 @fontface {
 	font-family: Squealer;
 	src(../squealer.ttf);
+}
 .title {
 	position: absolute;
 	width: 100%;
