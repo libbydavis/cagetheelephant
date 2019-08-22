@@ -10,11 +10,11 @@ $(document).ready(function(){
 	$("#socialcuescontent").click(function(){
 		$("#bigalbumimage").hide();
 		$(".hiddenalbum").fadeIn();
-		$(".albumtitle").toggle();
+		$(".albumtitle").hide();
 	});
 	$("#closealbum").click(function(){
 		$("#bigalbumimage").fadeIn();
 		$(".hiddenalbum").hide();
-		$(".albumtitle").toggle();
+		$(".albumtitle").toggleClass(".heading");
 	});
 });
