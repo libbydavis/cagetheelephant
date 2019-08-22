@@ -3,6 +3,9 @@ body, html{
 	padding: 0;
 	background-color: #0195b0;
 }
+@fontface {
+	font-family: Squealer;
+	src(../squealer.ttf);
 .title {
 	position: absolute;
 	width: 100%;
