@@ -15,6 +15,7 @@ $(document).ready(function(){
 	$("#closealbum").click(function(){
 		$("#bigalbumimage").fadeIn();
 		$(".hiddenalbum").hide();
+		$(".albumtitle").show();
 		$(".albumtitle").toggleClass(".heading");
 	});
 });
