@@ -4,8 +4,8 @@ body, html{
 	background-color: #0195b0;
 }
 @fontface {
-	font-family: Squealer;
-	src(../squealer.ttf);
+	font-family: "Squealer";
+	src(squealer.ttf);
 }
 .title {
 	position: absolute;
