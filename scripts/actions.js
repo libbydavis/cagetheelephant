@@ -1,3 +1,4 @@
+//Tour Box Open and Close
 $(document).ready(function(){
 	$("#tourbutton").click(function(){
 		$("#tourcontent").fadeToggle();
@@ -6,16 +7,31 @@ $(document).ready(function(){
 		$("#tourcontent").fadeOut();
 	});
 });
+
+//Album Box Open and Close
 $(document).ready(function(){
 	$("#socialcuescontent").click(function(){
-		$("#bigalbumimage").hide();
+		$("#bigalbumimage").fadeOut();
 		$(".hiddenalbum").fadeIn();
-		$(".albumtitle").hide();
+		$(".albumtitle").toggleClass(".heading");
 	});
 	$("#closealbum").click(function(){
 		$("#bigalbumimage").fadeIn();
-		$(".hiddenalbum").hide();
-		$(".albumtitle").show();
-		$(".albumtitle").toggleClass(".heading");
+		$(".hiddenalbum").fadeOut();
 	});
+
+});
+
+//About Open and Close
+$(document).ready(function(){
+	$("#aboutcontent").click(function(){
+		$("#aboutimagedisappear").fadeOut();
+		$(".hiddenabout").fadeIn();
+		$(".abouttitle").toggleClass(".heading");
+	});
+	$("#closeabout").click(function(){
+		$("#aboutimagedisappear").fadeIn();
+		$(".hiddenabout").fadeOut();
+	});
+
 });
