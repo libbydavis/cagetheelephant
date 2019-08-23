@@ -6,7 +6,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="scripts/actions.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Nova+Cut&display=swap" rel="stylesheet">
-	<script src="javascript"></script>
 	</head>
 	<body>
 		<div class="title">
@@ -25,51 +24,62 @@
 				<div id="tourcontent">
 					<button id="closetour" class="close"><img src="images/bandclose.png"></button>
 					<h3>Tour Dates</h3>
-					<div class="daterow">
-						<p>22 August</p>
-						<p>Columbia, MD</p>
-						<p>Merriweather Post Pavilion (Co-Headline with Beck)</p>
-					</div>
-					<div class="daterow">
-						<p>24 August</p>
-						<p>Raleigh, NC</p>
-						<p>Coastal Credit Union Music Park (Co-Headline with Beck)</p>
-					</div>
-					<div class="daterow">
-						<p>25 August</p>
-						<p>Charlotte, NC</p>
-						<p>PNC Music Pavilion (Co-Headline with Beck)</p>
-					</div>
-					<div class="daterow">
-						<p>27 August</p>
-						<p>Birmingham, AL</p>
-						<p>Oak Mountain Amphitheatre (Co-Headline with Beck)</p>
-					</div>
-					<div class="daterow">
-						<p>29 August</p>
-						<p>Tampa, FL</p>
-						<p>MidFlorida Credit Union Amphitheatre (Co-Headline with Beck)</p>
-					</div>
-					<div class="daterow">
-						<p>30 August</p>
-						<p>West Palm Beach, FL</p>
-						<p>Coral Sky Amphitheatre (Co-Headline with Beck)</p>
-					</div>
-					<div class="daterow">
-						<p>20 September</p>
-						<p>Las Vegas, NV</p>
-						<p>iHeartRadio Music Festival</p>
-					</div>
-					<div class="daterow">
-						<p>19 October</p>
-						<p>Monterrey, Mexico</p>
-						<p>Tecate Live Out Festival</p>
-					</div>
-					<div class="daterow">
-						<p>21 October</p>
-						<p>Mexico City, Mexico</p>
-						<p>Pepsi Center WTC</p>
-					</div>
+					<a href="https://concerts1.livenation.com/event/2D005647F53A7CE6" target="_blank">
+						<div class="daterow">
+							<p>24 August</p>
+							<p>Raleigh, NC</p>
+							<p>Coastal Credit Union Music Park (Co-Headline with Beck)</p>
+						</div>
+					</a>
+					<a href="https://concerts1.livenation.com/event/2D005648A8C04FD5" target="_blank">
+						<div class="daterow">
+							<p>25 August</p>
+							<p>Charlotte, NC</p>
+							<p>PNC Music Pavilion (Co-Headline with Beck)</p>
+						</div>
+					</a>
+					<a href="https://www1.ticketmaster.com/event/20005648EC44A356" target="_blank">
+						<div class="daterow">
+							<p>27 August</p>
+							<p>Birmingham, AL</p>
+							<p>Oak Mountain Amphitheatre (Co-Headline with Beck)</p>
+						</div>
+					</a>
+					<a href="https://concerts1.livenation.com/event/0D005649C55CA250" target="_blank">
+						<div class="daterow">
+							<p>29 August</p>
+							<p>Tampa, FL</p>
+							<p>MidFlorida Credit Union Amphitheatre (Co-Headline with Beck)</p>
+						</div>
+					</a>
+					<a href="https://www1.ticketmaster.com/event/0D005649C0CAA091" target="_blank">
+						<div class="daterow">
+							<p>30 August</p>
+							<p>West Palm Beach, FL</p>
+							<p>Coral Sky Amphitheatre (Co-Headline with Beck)</p>
+						</div>
+					</a>
+					<a href="https://www.axs.com/events/365760/iheartradio-music-festival-tickets" target="_blank">
+						<div class="daterow">
+							<p>20 September</p>
+							<p>Las Vegas, NV</p>
+							<p>iHeartRadio Music Festival</p>
+						</div>
+					</a>
+					<a href="https://www.tecateliveout.mx/" target="_blank">
+						<div class="daterow">
+							<p>19 October</p>
+							<p>Monterrey, Mexico</p>
+							<p>Tecate Live Out Festival</p>
+						</div>
+					</a>
+					<a href="https://www.ticketmaster.com.mx/event/140056F4A2C25220" target="_blank">
+						<div class="daterow">
+							<p>21 October</p>
+							<p>Mexico City, Mexico</p>
+							<p>Pepsi Center WTC</p>
+						</div>
+					</a>
 				</div>
 				<img src="images/backgroundgrid3.jpg" class="backimages tourimagereplace" id="tourimagereplace">
 			</div>
@@ -77,12 +87,12 @@
 				<img src="images/backgroundgrid2.jpg" class="backimages">
 			</div>
 			<div class="backgrid">
-				<h3 class="heading albumtitle">Album</h3>
 				<div id="socialcuescontent">
+					<h3 class="heading albumtitle">Album</h3>
 					<img src="images/socialcuescover.jpg" class="backimages" id="bigalbumimage">
 				</div>
 				<div class="hiddenalbum">
-					<button id="closealbum" class="close" onclick="closealbum()"><img src="images/bandclosewhite.png"></button>
+					<button id="closealbum" class="close"><img src="images/bandclosewhite.png"></button>
 					<img src="images/socialcuescover.jpg" class="hiddenalbumcover">
 					<h4>Social Cues</h4>
 					<p>Out Now</p>
@@ -105,11 +115,26 @@
 				</div>
 			</div>
 			<div class="backgrid">
-				<img src="images/backgroundgrid5.jpg" class="backimages">
+				<div id="aboutcontent">
+					<h3 class="heading">About Band</h3>
+					<img src="images/backgroundgrid6.jpg" class="backimages" id="aboutimagedisappear">
+				</div>
+				<div class="hiddenabout">
+					<button class="close" id="closeabout"><img src="images/bandclosewhite.png"></button>
+					<h4>About Cage The Elephant</h4>
+					<p>They are a band that was founded in 2006.</p>
+				</div>
 			</div>
 			<div class="backgrid">
-				<img src="images/backgroundgrid6.jpg" class="backimages">
+				<img src="images/backgroundgrid5.jpg" class="backimages">
 			</div>
 		</div>
+		<footer>
+			<a href="https://www.instagram.com/cagetheelephant/?hl=en" target="_blank"><img src="images/igwhitelogo.png"></a>
+			<a href="https://www.facebook.com/cagetheelephant/" target="_blank"><img src="images/facebookwhitelogo.png"></a>
+			<a href="https://twitter.com/CageTheElephant?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitterwhitelogo.png"></a>
+			<a href="https://open.spotify.com/artist/26T3LtbuGT1Fu9m0eRq5X3" target="_blank"><img src="images/Spotify_Icon_RGB_White.png"></a>
+			<p>Copyright Cage The Elephant 2019</p>
+		</footer>
 	</body>
 </html>
