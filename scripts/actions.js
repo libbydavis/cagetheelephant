@@ -13,11 +13,12 @@ $(document).ready(function(){
 	$("#socialcuescontent").click(function(){
 		$("#bigalbumimage").fadeOut();
 		$(".hiddenalbum").fadeIn();
-		$(".albumtitle").toggleClass(".heading");
+		$(".albumtitle").hide();
 	});
 	$("#closealbum").click(function(){
 		$("#bigalbumimage").fadeIn();
 		$(".hiddenalbum").fadeOut();
+		$(".albumtitle").show();
 	});
 
 });
@@ -27,11 +28,12 @@ $(document).ready(function(){
 	$("#aboutcontent").click(function(){
 		$("#aboutimagedisappear").fadeOut();
 		$(".hiddenabout").fadeIn();
-		$(".abouttitle").toggleClass(".heading");
+		$(".abouttitle").hide();
 	});
 	$("#closeabout").click(function(){
 		$("#aboutimagedisappear").fadeIn();
 		$(".hiddenabout").fadeOut();
+		$(".abouttitle").show();
 	});
 
 });
