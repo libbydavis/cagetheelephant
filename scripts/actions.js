@@ -3,6 +3,9 @@ $(document).ready(function(){
 	$("#tourbutton").click(function(){
 		$("#tourcontent").fadeToggle();
 	});
+	$("#tourmenu").click(function(){
+		$("#tourcontent").fadeToggle();
+	});
 	$("#closetour").click(function(){
 		$("#tourcontent").fadeOut();
 	});
@@ -11,6 +14,11 @@ $(document).ready(function(){
 //Album Box Open and Close
 $(document).ready(function(){
 	$("#socialcuescontent").click(function(){
+		$("#bigalbumimage").fadeOut();
+		$(".hiddenalbum").fadeIn();
+		$(".albumtitle").hide();
+	});
+	$("#socialcuesmenu").click(function(){
 		$("#bigalbumimage").fadeOut();
 		$(".hiddenalbum").fadeIn();
 		$(".albumtitle").hide();
@@ -26,6 +34,11 @@ $(document).ready(function(){
 //About Open and Close
 $(document).ready(function(){
 	$("#aboutcontent").click(function(){
+		$("#aboutimagedisappear").fadeOut();
+		$(".hiddenabout").fadeIn();
+		$(".abouttitle").hide();
+	});
+	$("#aboutmenu").click(function(){
 		$("#aboutimagedisappear").fadeOut();
 		$(".hiddenabout").fadeIn();
 		$(".abouttitle").hide();
