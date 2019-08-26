@@ -16,15 +16,33 @@ body, html{
 	line-height: 1.3em;
 	text-transform: uppercase;
 	z-index: 1;
-}
-.title h1 {
-	font-size: 4.5em;
 	font-family: 'Nova Cut', cursive;
 }
+.title h1 {
+	font-size: 5.5em;
+}
 .title h2 {
-	font-size: 3em;
+	font-size: 4em;
 	letter-spacing: 0.3em;
 	font-family: 'squealer';
+	color: #ce340a;
+}
+.title a {
+	color: white;
+	text-decoration: none;
+}
+.title a:hover {
+	color: #ce340a;
+} 
+.title div {
+	margin-top: 1%;
+}
+.title div a p {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-left: 2%;
+	padding-right: 2%;
+	display: inline;
 }
 .backgrid {
 	width: 50%;
@@ -93,15 +111,23 @@ body, html{
 	z-index: 2;
 	font-family: 'Helvetica Neue', sans-serif;
 	font-weight: bold;
+	padding-bottom: 0.5%;
 
 }
 #tourcontent h3{
-	font-family: 'Nova Cut', cursive;
 	font-size: 2.5em;
+	margin-left: 12%;
+}
+#tourcontent h3, #tourcontent h4 {
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	margin-left: 16%;
+	font-family: 'Nova Cut', cursive;
+}
+#tourcontent h4 {
+	font-size: 1.5em;
+	margin-left: 13%;
+	max-width: 75%;
 }
 #tourcontent a{
 	color: #0195b0;
@@ -141,7 +167,9 @@ body, html{
 	color: white;
 	padding-bottom: 5%;
 }
-
+.hiddenalbum h4 {
+	margin-bottom: 0;
+}
 .hiddenalbum h4, .hiddenabout h4{
 	font-family: 'Nova Cut', cursive;
 	font-size: 2.5em;
@@ -151,9 +179,8 @@ body, html{
 	justify-content: center;
 }
 .hiddenabout h4 {
-	display: flex;
-	justify-content: center;
 	margin-right: 10%;
+	padding-top: 4%;
 }
 .hiddenalbum p, .hiddenabout p{
 	font-family: 'Helvetica Neue', sans-serif;
@@ -170,18 +197,17 @@ body, html{
 	position: relative;
 	right: 5%;
 }
-.hiddenalbum ol{
-	font-family: 'Helvetica Neue', sans-serif;
-	text-align: center;
-	list-style-position: inside;
-	padding-left: 0;
+.hiddenalbum iframe {
+	padding-top: 2%;
+	border: none;
+	background-color: transparent;
 }
 
 .spotifylogo {
 	width: 5%;
 }
 .spotifylogo:hover {
-	background: url();
+	width: 6%;
 }
 #closeabout {
 	float: left;
@@ -196,6 +222,30 @@ body, html{
 	color: white;
 	vertical-align: top;
 	margin: 0;
+}
+.hiddenabout p {
+	font-size: 1em;
+	max-width: 75%;
+	margin: auto;
+	padding-bottom: 2%;
+}
+.bandphoto {
+	max-width: 90%;
+	max-height: 45vh;
+	padding-bottom: 2%;
+}
+.hiddenabout a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	background-color: #0195b0;
+	max-width: 20%;
+	margin: auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.hiddenabout a:hover {
+	color: #ce340a;
 }
 
 
@@ -231,9 +281,6 @@ footer {
 }
 footer a img{
 	max-height: 5vh;
-	margin-left: 5%;
-	margin-right: 5%;
-	padding: 1%;
 }
 footer p{
 	padding-top: 1%;
@@ -241,6 +288,16 @@ footer p{
 	font-family: 'squealer';
 	letter-spacing: 0.2em;
 	font-size: 1.1em;
+}
+footer a {
+	display: inline-flex;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 1%;
+}
+footer a:hover{
+	background-color: #eecc22;
+	border-radius: 50%;
 }
 
 /* Media Queries */
@@ -258,13 +315,22 @@ footer p{
 	}
 }
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 885px){
 	.heading {
 		font-size: 4.5em;
 	}
 	#aboutcontent .heading {
 		font-size: 4em;
 		left: 2.8%;
+	}
+	.title{
+		line-height: 5em;
+	}
+	.title h2 {
+		line-height: 1.3em;
+	}
+	.title h1, .title h2{
+		margin: 1%;
 	}
 
 }
@@ -283,16 +349,10 @@ footer p{
 	top: 120%;
 	}
 	#socialcuescontent .heading{
-	left: 10%;
+	left: 14%;
 	}
 	#aboutcontent .heading {
 		font-size: 6em;
 		left: 12%;
-	}
-	.title{
-		line-height: 5em;
-	}
-	.title h1, .title h2{
-		margin: 1%;
 	}
 }
