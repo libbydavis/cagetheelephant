@@ -355,4 +355,11 @@ footer a:hover{
 		font-size: 6em;
 		left: 12%;
 	}
+	.title div a p {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+
+	}
+
 }
