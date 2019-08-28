@@ -1,13 +1,20 @@
+var opentour;
 //Tour Box Open and Close
 $(document).ready(function(){
 	$("#tourbutton").click(function(){
+		opentour = 1;
 		$("#tourcontent").fadeToggle();
+		return opentour;
 	});
 	$("#tourmenu").click(function(){
+		opentour = 1;
 		$("#tourcontent").fadeToggle();
+		return opentour;
 	});
 	$("#closetour").click(function(){
+		opentour = 0;
 		$("#tourcontent").fadeOut();
+		return opentour;
 	});
 });
 
@@ -17,8 +24,13 @@ $(document).ready(function(){
 		$("#bigalbumimage").fadeOut();
 		$(".hiddenalbum").fadeIn();
 		$(".albumtitle").hide();
+
 	});
 	$("#socialcuesmenu").click(function(){
+		if (opentour === 1) {
+			$("#tourcontent").fadeOut();
+			opentour = 0;
+		};
 		$("#bigalbumimage").fadeOut();
 		$(".hiddenalbum").fadeIn();
 		$(".albumtitle").hide();
