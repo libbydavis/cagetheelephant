@@ -3,9 +3,9 @@ body, html{
 	padding: 0;
 	background-color: #0195b0;
 }
-@fontface {
+@font-face {
 	font-family: "squealer";
-	src: ("squealer.ttf");
+	src: url("squealer.ttf");
 }
 /* Title and Background Image Grid */
 .title {
@@ -80,10 +80,8 @@ body, html{
 #aboutcontent .heading {
 	font-size: 6em;
 	left: 7%;
-	color: #eecc22;
 }
 #tourbutton .heading {
-	color: #eecc22;
 	left: 15%;
 	top: 128%;
 }
@@ -91,15 +89,10 @@ body, html{
 #socialcuescontent .heading{
 	left: 65%;
 }
-#tourbutton:hover .heading{
-	color: #ce340a;
-}
-#socialcuescontent:hover .heading{
+#tourbutton:hover .heading, #socialcuescontent:hover .heading, #aboutcontent:hover .heading{
 	color: #eecc22;
 }
-#aboutcontent:hover .heading{
-	color: #ce340a;
-}
+
 
 /* Hidden Content */
 #tourcontent {
@@ -111,7 +104,7 @@ body, html{
 	z-index: 2;
 	font-family: 'Helvetica Neue', sans-serif;
 	font-weight: bold;
-	padding-bottom: 0.5%;
+	padding-bottom: 8%;
 
 }
 #tourcontent h3{
@@ -222,6 +215,7 @@ body, html{
 	color: white;
 	vertical-align: top;
 	margin: 0;
+	padding-bottom: 1%
 }
 .hiddenabout p {
 	font-size: 1em;
@@ -243,6 +237,7 @@ body, html{
 	margin: auto;
 	padding-top: 1%;
 	padding-bottom: 1%;
+	margin-bottom: 1%;
 }
 .hiddenabout a:hover {
 	color: #ce340a;
@@ -361,5 +356,4 @@ footer a:hover{
 	margin: 0;
 
 	}
-
 }
